@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input placeholder="key" [(ngModel)]="userKey"></ion-input>
+  <ion-input placeholder="value" [(ngModel)]="userData"></ion-input>
+  <button ion-button (click)="saveData()">Save</button>
+  <button ion-button (click)="loadData()">Load</button>
+  <ion-label>{{storedData}}</ion-label>
+</ion-content>
